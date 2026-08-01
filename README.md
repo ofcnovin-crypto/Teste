@@ -1,2 +1,0 @@
-# Teste
-Meu primeiro desenvolvimento
