@@ -1,0 +1,38 @@
+/* FinTech.css — styles and neon LED animation */
+:root{
+  --bg:#071027;
+  --card:#0f1220;
+  --accent:#00ffd1; /* neon cyan */
+  --accent-2:#ff00c8; /* neon pink */
+  --text:#e6f0ff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:linear-gradient(180deg,#020617 0%, #071027 100%);color:var(--text);min-height:100vh}
+header.head-tab{display:flex;align-items:center;justify-content:space-between;padding:18px 32px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-img{width:56px;height:56px;object-fit:contain}
+.neon{color:var(--text);text-shadow:0 0 6px rgba(0,255,209,0.25),0 0 12px rgba(0,255,209,0.12),0 0 30px rgba(255,0,200,0.06)}
+.main-nav{display:flex;gap:18px}
+.nav-item{display:flex;flex-direction:column;align-items:flex-start}
+.select-menu{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:6px 10px;border-radius:6px}
+.backbox .content-wrap{display:flex;gap:28px;padding:28px;max-width:1200px;margin:12px auto}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+.neon-border{position:relative}
+.neon-border::after{content:"";position:absolute;inset:0;border-radius:12px;box-shadow:0 0 16px rgba(0,255,209,0.06),0 0 32px rgba(255,0,200,0.03);pointer-events:none}
+.features{flex:1}
+.features h2{font-size:18px;line-height:1.35}
+.icons-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.icon-item{display:flex;flex-direction:column;align-items:center;text-align:center;background:rgba(255,255,255,0.02);padding:8px;border-radius:10px}
+.icon-item img{width:72px;height:72px;object-fit:cover;border-radius:8px}
+.signup{width:360px}
+#GTS{margin:0}
+#full_name,#email,#phone,#password{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)}
+.form-actions{display:flex;gap:8px;align-items:center;margin-top:8px}
+#btn,#btn-demo,#more-vendors,#contact-us{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#031; border:none;padding:10px 14px;border-radius:8px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(0,255,209,0.08)}
+#btn-demo{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+.form-msg{margin-top:10px;min-height:20px}
+.users{display:flex;flex-wrap:wrap;gap:12px}
+.vendor{width:140px;padding:8px;text-align:center;background:rgba(255,255,255,0.02);border-radius:10px}
+.vendor img{width:72px;height:72px;border-radius:50%}
+.info-section{padding:24px}
+.info-grid{display:grid;grid*
